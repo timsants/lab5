@@ -3,5 +3,8 @@ var data = require('../data.json');
 
 exports.view = function(req, res){
 	console.log(data);
-	res.render('index');
+	var filtered_friends = data.friends;
+	res.render('index', { 'friend': filtered_friends });
 };
+
+

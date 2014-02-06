@@ -21,7 +21,8 @@
 <body>
 	<div class="container">
 	<h1>My HCI Friends</h1>
-	{{#each friend}}
+	<a href="/"> Go back to home</a> 
+
 		<hr>
 		<div class="friend">
 		<img src="{{imageURL}}" class="img-responsive img-rounded">
@@ -31,7 +32,7 @@
 		<p>{{description}}</p>
 		
 		</div>
-	{{/each}}
+
 	<form id="addFriendForm" role="form" method="get" action="/add">
 		<h3>Add a friend</h3>
 	    <div class="form-group">
